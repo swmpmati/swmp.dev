@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swmp - bladeveil</title>
+    <meta name="description" content="Bladeveil.">
+    <link rel="canonical" href="https://swmp.dev/bladeveil.html">
+    <meta property="og:site_name" content="swmp - bladeveil">
+    <meta property="og:title" content="swmp.dev">
+    <meta property="og:description" content="Bladeveil.">
+    <meta property="og:website" content="website">
+    <meta property="og:url" content="https://swmp.dev/bladeveil.html">
+    <meta property="og:image" content="https://swmp.dev/swmp-logo.png">
+    <link rel="icon" type="image/png" href="https://swmp.dev/swmp-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @font-face { font-family: 'Torus'; src: url('torus.ttf') format('opentype'); font-weight: normal; font-style: normal; } @font-face { font-family: 'Torus'; src: url('torus.ttf') format('opentype'); font-weight: 500; font-style: normal; } @font-face { font-family: 'Torus'; src: url('torus.ttf') format('opentype'); font-weight: 600; font-style: normal; } @font-face { font-family: 'Torus'; src: url('torus.ttf') format('opentype'); font-weight: 700; font-style: normal; } @font-face { font-family: 'Torus'; src: url('torus.ttf') format('opentype'); font-weight: 800; font-style: normal; } @font-face { font-family: 'Torus'; src: url('torus.ttf') format('opentype'); font-weight: 900; font-style: normal; } * { margin: 0; padding: 0; box-sizing: border-box; } body { width: 100vw; height: 100vh; background: #000; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; } .soon { font-family: 'Torus', sans-serif; font-size: clamp(26px, 10vw, 75px); font-weight: 800; color: #fff; animation: float 2.5s ease-in-out infinite; letter-spacing: 0.1em; } .text { position: absolute; font-family: 'Torus', sans-serif; font-size: 12px; color: #000; pointer-events: none; } @keyframes float { 0% { transform: translateY(0); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <div class="soon">SOON</div>
+    <div class="text" id="text">17.01.2026</div>
+    <script>
+        const text = document.getElementById('text');
+        const maxX = window.innerWidth - 100;
+        const maxY = window.innerHeight - 20;
+        const randomX = Math.random() * maxX;
+        const randomY = Math.random() * maxY;
+        text.style.left = randomX + 'px';
+        text.style.top = randomY + 'px';
+    </script>
+</body>
+</html>
